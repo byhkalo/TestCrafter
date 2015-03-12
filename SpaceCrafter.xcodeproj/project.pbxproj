@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04016D5F1AB18767002307FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04016D5E1AB18767002307FF /* main.m */; };
+		04016D621AB18767002307FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04016D611AB18767002307FF /* AppDelegate.m */; };
+		04016D651AB18767002307FF /* SpaceCrafter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04016D631AB18767002307FF /* SpaceCrafter.xcdatamodeld */; };
+		04016D681AB18767002307FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04016D671AB18767002307FF /* ViewController.m */; };
+		04016D6B1AB18767002307FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04016D691AB18767002307FF /* Main.storyboard */; };
+		04016D6D1AB18767002307FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04016D6C1AB18767002307FF /* Images.xcassets */; };
+		04016D701AB18767002307FF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04016D6E1AB18767002307FF /* LaunchScreen.xib */; };
+		04016D7C1AB18767002307FF /* SpaceCrafterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04016D7B1AB18767002307FF /* SpaceCrafterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04016D761AB18767002307FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04016D511AB18766002307FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04016D581AB18766002307FF;
+			remoteInfo = SpaceCrafter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04016D591AB18766002307FF /* SpaceCrafter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceCrafter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04016D5D1AB18766002307FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04016D5E1AB18767002307FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04016D601AB18767002307FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04016D611AB18767002307FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04016D641AB18767002307FF /* SpaceCrafter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpaceCrafter.xcdatamodel; sourceTree = "<group>"; };
+		04016D661AB18767002307FF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04016D671AB18767002307FF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04016D6A1AB18767002307FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04016D6C1AB18767002307FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		04016D6F1AB18767002307FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		04016D751AB18767002307FF /* SpaceCrafterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceCrafterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04016D7A1AB18767002307FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04016D7B1AB18767002307FF /* SpaceCrafterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceCrafterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04016D561AB18766002307FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04016D721AB18767002307FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04016D501AB18766002307FF = {
+			isa = PBXGroup;
+			children = (
+				04016D5B1AB18766002307FF /* SpaceCrafter */,
+				04016D781AB18767002307FF /* SpaceCrafterTests */,
+				04016D5A1AB18766002307FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04016D5A1AB18766002307FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04016D591AB18766002307FF /* SpaceCrafter.app */,
+				04016D751AB18767002307FF /* SpaceCrafterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04016D5B1AB18766002307FF /* SpaceCrafter */ = {
+			isa = PBXGroup;
+			children = (
+				04016D601AB18767002307FF /* AppDelegate.h */,
+				04016D611AB18767002307FF /* AppDelegate.m */,
+				04016D661AB18767002307FF /* ViewController.h */,
+				04016D671AB18767002307FF /* ViewController.m */,
+				04016D691AB18767002307FF /* Main.storyboard */,
+				04016D6C1AB18767002307FF /* Images.xcassets */,
+				04016D6E1AB18767002307FF /* LaunchScreen.xib */,
+				04016D631AB18767002307FF /* SpaceCrafter.xcdatamodeld */,
+				04016D5C1AB18766002307FF /* Supporting Files */,
+			);
+			path = SpaceCrafter;
+			sourceTree = "<group>";
+		};
+		04016D5C1AB18766002307FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04016D5D1AB18766002307FF /* Info.plist */,
+				04016D5E1AB18767002307FF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04016D781AB18767002307FF /* SpaceCrafterTests */ = {
+			isa = PBXGroup;
+			children = (
+				04016D7B1AB18767002307FF /* SpaceCrafterTests.m */,
+				04016D791AB18767002307FF /* Supporting Files */,
+			);
+			path = SpaceCrafterTests;
+			sourceTree = "<group>";
+		};
+		04016D791AB18767002307FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04016D7A1AB18767002307FF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04016D581AB18766002307FF /* SpaceCrafter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04016D7F1AB18768002307FF /* Build configuration list for PBXNativeTarget "SpaceCrafter" */;
+			buildPhases = (
+				04016D551AB18766002307FF /* Sources */,
+				04016D561AB18766002307FF /* Frameworks */,
+				04016D571AB18766002307FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpaceCrafter;
+			productName = SpaceCrafter;
+			productReference = 04016D591AB18766002307FF /* SpaceCrafter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04016D741AB18767002307FF /* SpaceCrafterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04016D821AB18768002307FF /* Build configuration list for PBXNativeTarget "SpaceCrafterTests" */;
+			buildPhases = (
+				04016D711AB18767002307FF /* Sources */,
+				04016D721AB18767002307FF /* Frameworks */,
+				04016D731AB18767002307FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04016D771AB18767002307FF /* PBXTargetDependency */,
+			);
+			name = SpaceCrafterTests;
+			productName = SpaceCrafterTests;
+			productReference = 04016D751AB18767002307FF /* SpaceCrafterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04016D511AB18766002307FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Bykhkalo Konstantyh";
+				TargetAttributes = {
+					04016D581AB18766002307FF = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					04016D741AB18767002307FF = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 04016D581AB18766002307FF;
+					};
+				};
+			};
+			buildConfigurationList = 04016D541AB18766002307FF /* Build configuration list for PBXProject "SpaceCrafter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04016D501AB18766002307FF;
+			productRefGroup = 04016D5A1AB18766002307FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04016D581AB18766002307FF /* SpaceCrafter */,
+				04016D741AB18767002307FF /* SpaceCrafterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04016D571AB18766002307FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04016D6B1AB18767002307FF /* Main.storyboard in Resources */,
+				04016D701AB18767002307FF /* LaunchScreen.xib in Resources */,
+				04016D6D1AB18767002307FF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04016D731AB18767002307FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04016D551AB18766002307FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04016D621AB18767002307FF /* AppDelegate.m in Sources */,
+				04016D651AB18767002307FF /* SpaceCrafter.xcdatamodeld in Sources */,
+				04016D681AB18767002307FF /* ViewController.m in Sources */,
+				04016D5F1AB18767002307FF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04016D711AB18767002307FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04016D7C1AB18767002307FF /* SpaceCrafterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04016D771AB18767002307FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04016D581AB18766002307FF /* SpaceCrafter */;
+			targetProxy = 04016D761AB18767002307FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04016D691AB18767002307FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04016D6A1AB18767002307FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04016D6E1AB18767002307FF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04016D6F1AB18767002307FF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04016D7D1AB18767002307FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04016D7E1AB18767002307FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04016D801AB18768002307FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpaceCrafter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04016D811AB18768002307FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpaceCrafter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		04016D831AB18768002307FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SpaceCrafterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceCrafter.app/SpaceCrafter";
+			};
+			name = Debug;
+		};
+		04016D841AB18768002307FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SpaceCrafterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceCrafter.app/SpaceCrafter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04016D541AB18766002307FF /* Build configuration list for PBXProject "SpaceCrafter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04016D7D1AB18767002307FF /* Debug */,
+				04016D7E1AB18767002307FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04016D7F1AB18768002307FF /* Build configuration list for PBXNativeTarget "SpaceCrafter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04016D801AB18768002307FF /* Debug */,
+				04016D811AB18768002307FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04016D821AB18768002307FF /* Build configuration list for PBXNativeTarget "SpaceCrafterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04016D831AB18768002307FF /* Debug */,
+				04016D841AB18768002307FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04016D631AB18767002307FF /* SpaceCrafter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04016D641AB18767002307FF /* SpaceCrafter.xcdatamodel */,
+			);
+			currentVersion = 04016D641AB18767002307FF /* SpaceCrafter.xcdatamodel */;
+			path = SpaceCrafter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 04016D511AB18766002307FF /* Project object */;
+}
