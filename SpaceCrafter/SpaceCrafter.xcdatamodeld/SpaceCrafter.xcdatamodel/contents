@@ -1,4 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1510" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="BKBuilding" representedClassName="BKBuilding" syncable="YES">
+        <attribute name="descriptionOfBuilding" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="craftPlanet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BKCraftPlanet" inverseName="buildings" inverseEntity="BKCraftPlanet" syncable="YES"/>
+        <relationship name="rooms" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BKRoom" inverseName="building" inverseEntity="BKRoom" syncable="YES"/>
+    </entity>
+    <entity name="BKCraftPlanet" representedClassName="BKCraftPlanet" syncable="YES">
+        <attribute name="descriptionOfPlanet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="planetName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rangOfPlanet" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="timeForCraft" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="buildings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BKBuilding" inverseName="craftPlanet" inverseEntity="BKBuilding" syncable="YES"/>
+        <relationship name="planetarySystem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BKPlanetarySystem" inverseName="craftPlanet" inverseEntity="BKPlanetarySystem" syncable="YES"/>
+        <relationship name="shipOnPlanet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BKSpaceShip" inverseName="currentPlanet" inverseEntity="BKSpaceShip" syncable="YES"/>
+    </entity>
+    <entity name="BKPerson" representedClassName="BKPerson" syncable="YES">
+        <attribute name="descriptionOfPerson" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="quest" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BKQuest" inverseName="person" inverseEntity="BKQuest" syncable="YES"/>
+        <relationship name="room" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BKRoom" inverseName="people" inverseEntity="BKRoom" syncable="YES"/>
+    </entity>
+    <entity name="BKPlanetarySystem" representedClassName="BKPlanetarySystem" syncable="YES">
+        <attribute name="descriptionOfSystem" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="craftPlanet" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="BKCraftPlanet" inverseName="planetarySystem" inverseEntity="BKCraftPlanet" syncable="YES"/>
+    </entity>
+    <entity name="BKQuest" representedClassName="BKQuest" syncable="YES">
+        <attribute name="descriptionOfQuest" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="executionCondition" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BKPerson" inverseName="quest" inverseEntity="BKPerson" syncable="YES"/>
+        <relationship name="sendResources" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BKResource" inverseName="quest" inverseEntity="BKResource" syncable="YES"/>
+        <relationship name="usingByShip" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BKSpaceShip" inverseName="shipNotebook" inverseEntity="BKSpaceShip" syncable="YES"/>
+    </entity>
+    <entity name="BKResource" representedClassName="BKResource" syncable="YES">
+        <attribute name="canBeTechnicalBlock" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="probability" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="quest" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BKQuest" inverseName="sendResources" inverseEntity="BKQuest" syncable="YES"/>
+        <relationship name="room" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BKRoom" inverseName="resources" inverseEntity="BKRoom" syncable="YES"/>
+        <relationship name="ship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BKSpaceShip" inverseName="resources" inverseEntity="BKSpaceShip" syncable="YES"/>
+        <relationship name="technicalBlockInShip" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BKSpaceShip" inverseName="technicalBlock" inverseEntity="BKSpaceShip" syncable="YES"/>
+    </entity>
+    <entity name="BKRoom" representedClassName="BKRoom" syncable="YES">
+        <attribute name="descriptionOfRoom" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="building" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BKBuilding" inverseName="rooms" inverseEntity="BKBuilding" syncable="YES"/>
+        <relationship name="people" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BKPerson" inverseName="room" inverseEntity="BKPerson" syncable="YES"/>
+        <relationship name="resources" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BKResource" inverseName="room" inverseEntity="BKResource" syncable="YES"/>
+    </entity>
+    <entity name="BKSpaceShip" representedClassName="BKSpaceShip" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="currentPlanet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BKCraftPlanet" inverseName="shipOnPlanet" inverseEntity="BKCraftPlanet" syncable="YES"/>
+        <relationship name="resources" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="BKResource" inverseName="ship" inverseEntity="BKResource" syncable="YES"/>
+        <relationship name="shipNotebook" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BKQuest" inverseName="usingByShip" inverseEntity="BKQuest" syncable="YES"/>
+        <relationship name="technicalBlock" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BKResource" inverseName="technicalBlockInShip" inverseEntity="BKResource" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BKCraftPlanet" positionX="-227" positionY="-369" width="128" height="148"/>
+        <element name="BKResource" positionX="-72" positionY="-229" width="128" height="163"/>
+        <element name="BKSpaceShip" positionX="-396" positionY="-72" width="128" height="118"/>
+        <element name="BKPlanetarySystem" positionX="-407" positionY="-324" width="128" height="88"/>
+        <element name="BKBuilding" positionX="-9" positionY="-391" width="128" height="103"/>
+        <element name="BKRoom" positionX="187" positionY="-343" width="128" height="118"/>
+        <element name="BKPerson" positionX="385" positionY="-360" width="128" height="103"/>
+        <element name="BKQuest" positionX="540" positionY="-234" width="128" height="133"/>
+    </elements>
 </model>

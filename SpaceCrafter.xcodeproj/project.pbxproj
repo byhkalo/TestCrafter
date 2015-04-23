@@ -10,11 +10,34 @@
 		04016D5F1AB18767002307FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04016D5E1AB18767002307FF /* main.m */; };
 		04016D621AB18767002307FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04016D611AB18767002307FF /* AppDelegate.m */; };
 		04016D651AB18767002307FF /* SpaceCrafter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04016D631AB18767002307FF /* SpaceCrafter.xcdatamodeld */; };
-		04016D681AB18767002307FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04016D671AB18767002307FF /* ViewController.m */; };
 		04016D6B1AB18767002307FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04016D691AB18767002307FF /* Main.storyboard */; };
 		04016D6D1AB18767002307FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04016D6C1AB18767002307FF /* Images.xcassets */; };
 		04016D701AB18767002307FF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04016D6E1AB18767002307FF /* LaunchScreen.xib */; };
 		04016D7C1AB18767002307FF /* SpaceCrafterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04016D7B1AB18767002307FF /* SpaceCrafterTests.m */; };
+		04016D881AB1898A002307FF /* BKBaseInformationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04016D871AB1898A002307FF /* BKBaseInformationCell.m */; };
+		04016D941AB191B6002307FF /* BKDataManeger.m in Sources */ = {isa = PBXBuildFile; fileRef = 04016D931AB191B6002307FF /* BKDataManeger.m */; };
+		04016D961AB191DF002307FF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04016D951AB191DF002307FF /* CoreData.framework */; };
+		04016DA01AB21C4D002307FF /* BKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04016D9F1AB21C4D002307FF /* BKTabBarController.m */; };
+		04016DA31AB22324002307FF /* BKShipTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04016DA21AB22324002307FF /* BKShipTableViewController.m */; };
+		041B460A1AB9CE800015B6D2 /* BKBuildingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B46091AB9CE800015B6D2 /* BKBuildingButton.m */; };
+		046890C61AB72BCC00AA240C /* BKResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 046890C51AB72BCC00AA240C /* BKResource.m */; };
+		046890C91AB72BCD00AA240C /* BKPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 046890C81AB72BCD00AA240C /* BKPerson.m */; };
+		046890D21AB72BCD00AA240C /* BKPlanetarySystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 046890D11AB72BCD00AA240C /* BKPlanetarySystem.m */; };
+		046890D51AB72BCD00AA240C /* BKBuilding.m in Sources */ = {isa = PBXBuildFile; fileRef = 046890D41AB72BCD00AA240C /* BKBuilding.m */; };
+		046890D81AB72BCD00AA240C /* BKRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 046890D71AB72BCD00AA240C /* BKRoom.m */; };
+		046890DB1AB72BCE00AA240C /* BKQuest.m in Sources */ = {isa = PBXBuildFile; fileRef = 046890DA1AB72BCE00AA240C /* BKQuest.m */; };
+		046890DE1AB72CF200AA240C /* BKSpaceShip.m in Sources */ = {isa = PBXBuildFile; fileRef = 046890DD1AB72CF100AA240C /* BKSpaceShip.m */; };
+		046890E11AB72CF200AA240C /* BKCraftPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 046890E01AB72CF200AA240C /* BKCraftPlanet.m */; };
+		04B6221C1AB25B2F00842519 /* BKResourcesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6221B1AB25B2F00842519 /* BKResourcesTableViewCell.m */; };
+		04C15BCA1AB8A56400E9D709 /* PlanetWithRoomsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C15BC91AB8A56300E9D709 /* PlanetWithRoomsViewController.m */; };
+		04C15BD01AB8AE5B00E9D709 /* ShipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C15BCF1AB8AE5B00E9D709 /* ShipViewController.m */; };
+		04C15BD41AB8B9E800E9D709 /* city_centr_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C15BD11AB8B9E800E9D709 /* city_centr_icon.png */; };
+		04C15BD51AB8B9E800E9D709 /* hangar_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C15BD21AB8B9E800E9D709 /* hangar_icon.png */; };
+		04C15BD61AB8B9E800E9D709 /* medicine_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C15BD31AB8B9E800E9D709 /* medicine_icon.png */; };
+		04C15BDC1AB8BA8100E9D709 /* spaceShipIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C15BDA1AB8BA8100E9D709 /* spaceShipIcon.png */; };
+		04C15BDD1AB8BA8100E9D709 /* SpaceShip.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C15BDB1AB8BA8100E9D709 /* SpaceShip.png */; };
+		04C15BE01AB8DCF900E9D709 /* BKRecourceCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C15BDF1AB8DCF900E9D709 /* BKRecourceCollectionCell.m */; };
+		04C15BE31AB8F13400E9D709 /* BKStartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C15BE21AB8F13400E9D709 /* BKStartController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +57,54 @@
 		04016D601AB18767002307FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04016D611AB18767002307FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		04016D641AB18767002307FF /* SpaceCrafter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpaceCrafter.xcdatamodel; sourceTree = "<group>"; };
-		04016D661AB18767002307FF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		04016D671AB18767002307FF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		04016D6A1AB18767002307FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04016D6C1AB18767002307FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		04016D6F1AB18767002307FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		04016D751AB18767002307FF /* SpaceCrafterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceCrafterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04016D7A1AB18767002307FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04016D7B1AB18767002307FF /* SpaceCrafterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceCrafterTests.m; sourceTree = "<group>"; };
+		04016D861AB1898A002307FF /* BKBaseInformationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBaseInformationCell.h; sourceTree = "<group>"; };
+		04016D871AB1898A002307FF /* BKBaseInformationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBaseInformationCell.m; sourceTree = "<group>"; };
+		04016D921AB191B6002307FF /* BKDataManeger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKDataManeger.h; sourceTree = "<group>"; };
+		04016D931AB191B6002307FF /* BKDataManeger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKDataManeger.m; sourceTree = "<group>"; };
+		04016D951AB191DF002307FF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		04016D9E1AB21C4D002307FF /* BKTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTabBarController.h; sourceTree = "<group>"; };
+		04016D9F1AB21C4D002307FF /* BKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTabBarController.m; sourceTree = "<group>"; };
+		04016DA11AB22324002307FF /* BKShipTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKShipTableViewController.h; sourceTree = "<group>"; };
+		04016DA21AB22324002307FF /* BKShipTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKShipTableViewController.m; sourceTree = "<group>"; };
+		041B46081AB9CE800015B6D2 /* BKBuildingButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBuildingButton.h; sourceTree = "<group>"; };
+		041B46091AB9CE800015B6D2 /* BKBuildingButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBuildingButton.m; sourceTree = "<group>"; };
+		046890C41AB72BCC00AA240C /* BKResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKResource.h; path = ../BKResource.h; sourceTree = "<group>"; };
+		046890C51AB72BCC00AA240C /* BKResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKResource.m; path = ../BKResource.m; sourceTree = "<group>"; };
+		046890C71AB72BCD00AA240C /* BKPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKPerson.h; path = ../BKPerson.h; sourceTree = "<group>"; };
+		046890C81AB72BCD00AA240C /* BKPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKPerson.m; path = ../BKPerson.m; sourceTree = "<group>"; };
+		046890D01AB72BCD00AA240C /* BKPlanetarySystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKPlanetarySystem.h; path = ../BKPlanetarySystem.h; sourceTree = "<group>"; };
+		046890D11AB72BCD00AA240C /* BKPlanetarySystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKPlanetarySystem.m; path = ../BKPlanetarySystem.m; sourceTree = "<group>"; };
+		046890D31AB72BCD00AA240C /* BKBuilding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKBuilding.h; path = ../BKBuilding.h; sourceTree = "<group>"; };
+		046890D41AB72BCD00AA240C /* BKBuilding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKBuilding.m; path = ../BKBuilding.m; sourceTree = "<group>"; };
+		046890D61AB72BCD00AA240C /* BKRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKRoom.h; path = ../BKRoom.h; sourceTree = "<group>"; };
+		046890D71AB72BCD00AA240C /* BKRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKRoom.m; path = ../BKRoom.m; sourceTree = "<group>"; };
+		046890D91AB72BCE00AA240C /* BKQuest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKQuest.h; path = ../BKQuest.h; sourceTree = "<group>"; };
+		046890DA1AB72BCE00AA240C /* BKQuest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKQuest.m; path = ../BKQuest.m; sourceTree = "<group>"; };
+		046890DC1AB72CF100AA240C /* BKSpaceShip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKSpaceShip.h; path = ../BKSpaceShip.h; sourceTree = "<group>"; };
+		046890DD1AB72CF100AA240C /* BKSpaceShip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKSpaceShip.m; path = ../BKSpaceShip.m; sourceTree = "<group>"; };
+		046890DF1AB72CF200AA240C /* BKCraftPlanet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKCraftPlanet.h; path = ../BKCraftPlanet.h; sourceTree = "<group>"; };
+		046890E01AB72CF200AA240C /* BKCraftPlanet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKCraftPlanet.m; path = ../BKCraftPlanet.m; sourceTree = "<group>"; };
+		04B6221A1AB25B2F00842519 /* BKResourcesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKResourcesTableViewCell.h; sourceTree = "<group>"; };
+		04B6221B1AB25B2F00842519 /* BKResourcesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKResourcesTableViewCell.m; sourceTree = "<group>"; };
+		04C15BC81AB8A56300E9D709 /* PlanetWithRoomsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanetWithRoomsViewController.h; sourceTree = "<group>"; };
+		04C15BC91AB8A56300E9D709 /* PlanetWithRoomsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanetWithRoomsViewController.m; sourceTree = "<group>"; };
+		04C15BCE1AB8AE5B00E9D709 /* ShipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShipViewController.h; sourceTree = "<group>"; };
+		04C15BCF1AB8AE5B00E9D709 /* ShipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShipViewController.m; sourceTree = "<group>"; };
+		04C15BD11AB8B9E800E9D709 /* city_centr_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = city_centr_icon.png; sourceTree = "<group>"; };
+		04C15BD21AB8B9E800E9D709 /* hangar_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hangar_icon.png; sourceTree = "<group>"; };
+		04C15BD31AB8B9E800E9D709 /* medicine_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medicine_icon.png; sourceTree = "<group>"; };
+		04C15BDA1AB8BA8100E9D709 /* spaceShipIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spaceShipIcon.png; sourceTree = "<group>"; };
+		04C15BDB1AB8BA8100E9D709 /* SpaceShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpaceShip.png; sourceTree = "<group>"; };
+		04C15BDE1AB8DCF900E9D709 /* BKRecourceCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKRecourceCollectionCell.h; sourceTree = "<group>"; };
+		04C15BDF1AB8DCF900E9D709 /* BKRecourceCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKRecourceCollectionCell.m; sourceTree = "<group>"; };
+		04C15BE11AB8F13300E9D709 /* BKStartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKStartController.h; sourceTree = "<group>"; };
+		04C15BE21AB8F13400E9D709 /* BKStartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKStartController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04016D961AB191DF002307FF /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +132,7 @@
 				04016D5B1AB18766002307FF /* SpaceCrafter */,
 				04016D781AB18767002307FF /* SpaceCrafterTests */,
 				04016D5A1AB18766002307FF /* Products */,
+				04016D971AB191F6002307FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,8 +150,12 @@
 			children = (
 				04016D601AB18767002307FF /* AppDelegate.h */,
 				04016D611AB18767002307FF /* AppDelegate.m */,
-				04016D661AB18767002307FF /* ViewController.h */,
-				04016D671AB18767002307FF /* ViewController.m */,
+				04C15BD91AB8BA4800E9D709 /* Images */,
+				04016D921AB191B6002307FF /* BKDataManeger.h */,
+				04016D931AB191B6002307FF /* BKDataManeger.m */,
+				04016DA71AB22B4C002307FF /* Controllers */,
+				04016D911AB1913C002307FF /* Models */,
+				04016D851AB18943002307FF /* Cells */,
 				04016D691AB18767002307FF /* Main.storyboard */,
 				04016D6C1AB18767002307FF /* Images.xcassets */,
 				04016D6E1AB18767002307FF /* LaunchScreen.xib */,
@@ -120,6 +189,81 @@
 				04016D7A1AB18767002307FF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04016D851AB18943002307FF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				041B46081AB9CE800015B6D2 /* BKBuildingButton.h */,
+				041B46091AB9CE800015B6D2 /* BKBuildingButton.m */,
+				04C15BDE1AB8DCF900E9D709 /* BKRecourceCollectionCell.h */,
+				04C15BDF1AB8DCF900E9D709 /* BKRecourceCollectionCell.m */,
+				04016D861AB1898A002307FF /* BKBaseInformationCell.h */,
+				04016D871AB1898A002307FF /* BKBaseInformationCell.m */,
+				04B6221A1AB25B2F00842519 /* BKResourcesTableViewCell.h */,
+				04B6221B1AB25B2F00842519 /* BKResourcesTableViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		04016D911AB1913C002307FF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				046890DF1AB72CF200AA240C /* BKCraftPlanet.h */,
+				046890E01AB72CF200AA240C /* BKCraftPlanet.m */,
+				046890DC1AB72CF100AA240C /* BKSpaceShip.h */,
+				046890DD1AB72CF100AA240C /* BKSpaceShip.m */,
+				046890D91AB72BCE00AA240C /* BKQuest.h */,
+				046890DA1AB72BCE00AA240C /* BKQuest.m */,
+				046890D61AB72BCD00AA240C /* BKRoom.h */,
+				046890D71AB72BCD00AA240C /* BKRoom.m */,
+				046890D31AB72BCD00AA240C /* BKBuilding.h */,
+				046890D41AB72BCD00AA240C /* BKBuilding.m */,
+				046890D01AB72BCD00AA240C /* BKPlanetarySystem.h */,
+				046890D11AB72BCD00AA240C /* BKPlanetarySystem.m */,
+				046890C71AB72BCD00AA240C /* BKPerson.h */,
+				046890C81AB72BCD00AA240C /* BKPerson.m */,
+				046890C41AB72BCC00AA240C /* BKResource.h */,
+				046890C51AB72BCC00AA240C /* BKResource.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		04016D971AB191F6002307FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04016D951AB191DF002307FF /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04016DA71AB22B4C002307FF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				04016D9E1AB21C4D002307FF /* BKTabBarController.h */,
+				04016D9F1AB21C4D002307FF /* BKTabBarController.m */,
+				04016DA11AB22324002307FF /* BKShipTableViewController.h */,
+				04016DA21AB22324002307FF /* BKShipTableViewController.m */,
+				04C15BE11AB8F13300E9D709 /* BKStartController.h */,
+				04C15BE21AB8F13400E9D709 /* BKStartController.m */,
+				04C15BCE1AB8AE5B00E9D709 /* ShipViewController.h */,
+				04C15BCF1AB8AE5B00E9D709 /* ShipViewController.m */,
+				04C15BC81AB8A56300E9D709 /* PlanetWithRoomsViewController.h */,
+				04C15BC91AB8A56300E9D709 /* PlanetWithRoomsViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		04C15BD91AB8BA4800E9D709 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				04C15BDA1AB8BA8100E9D709 /* spaceShipIcon.png */,
+				04C15BDB1AB8BA8100E9D709 /* SpaceShip.png */,
+				04C15BD11AB8B9E800E9D709 /* city_centr_icon.png */,
+				04C15BD21AB8B9E800E9D709 /* hangar_icon.png */,
+				04C15BD31AB8B9E800E9D709 /* medicine_icon.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +315,7 @@
 				TargetAttributes = {
 					04016D581AB18766002307FF = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = P499PEV453;
 					};
 					04016D741AB18767002307FF = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -202,7 +347,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C15BDD1AB8BA8100E9D709 /* SpaceShip.png in Resources */,
+				04C15BD61AB8B9E800E9D709 /* medicine_icon.png in Resources */,
+				04C15BD41AB8B9E800E9D709 /* city_centr_icon.png in Resources */,
+				04C15BDC1AB8BA8100E9D709 /* spaceShipIcon.png in Resources */,
 				04016D6B1AB18767002307FF /* Main.storyboard in Resources */,
+				04C15BD51AB8B9E800E9D709 /* hangar_icon.png in Resources */,
 				04016D701AB18767002307FF /* LaunchScreen.xib in Resources */,
 				04016D6D1AB18767002307FF /* Images.xcassets in Resources */,
 			);
@@ -222,10 +372,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046890D21AB72BCD00AA240C /* BKPlanetarySystem.m in Sources */,
+				046890E11AB72CF200AA240C /* BKCraftPlanet.m in Sources */,
+				04016D881AB1898A002307FF /* BKBaseInformationCell.m in Sources */,
+				046890D51AB72BCD00AA240C /* BKBuilding.m in Sources */,
+				04016DA31AB22324002307FF /* BKShipTableViewController.m in Sources */,
+				04016D941AB191B6002307FF /* BKDataManeger.m in Sources */,
 				04016D621AB18767002307FF /* AppDelegate.m in Sources */,
+				041B460A1AB9CE800015B6D2 /* BKBuildingButton.m in Sources */,
+				046890DB1AB72BCE00AA240C /* BKQuest.m in Sources */,
+				046890C91AB72BCD00AA240C /* BKPerson.m in Sources */,
+				04C15BE31AB8F13400E9D709 /* BKStartController.m in Sources */,
+				046890C61AB72BCC00AA240C /* BKResource.m in Sources */,
+				046890D81AB72BCD00AA240C /* BKRoom.m in Sources */,
+				04C15BD01AB8AE5B00E9D709 /* ShipViewController.m in Sources */,
+				046890DE1AB72CF200AA240C /* BKSpaceShip.m in Sources */,
+				04016DA01AB21C4D002307FF /* BKTabBarController.m in Sources */,
+				04B6221C1AB25B2F00842519 /* BKResourcesTableViewCell.m in Sources */,
 				04016D651AB18767002307FF /* SpaceCrafter.xcdatamodeld in Sources */,
-				04016D681AB18767002307FF /* ViewController.m in Sources */,
+				04C15BE01AB8DCF900E9D709 /* BKRecourceCollectionCell.m in Sources */,
 				04016D5F1AB18767002307FF /* main.m in Sources */,
+				04C15BCA1AB8A56400E9D709 /* PlanetWithRoomsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +583,7 @@
 				04016D811AB18768002307FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04016D821AB18768002307FF /* Build configuration list for PBXNativeTarget "SpaceCrafterTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +592,7 @@
 				04016D841AB18768002307FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
