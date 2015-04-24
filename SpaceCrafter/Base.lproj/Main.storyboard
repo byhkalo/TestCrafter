@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="774-PU-FgF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="774-PU-FgF">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--Item-->
@@ -25,7 +25,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCellIdentifier" id="924-gR-0bk" customClass="BKRecourceCollectionCell">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="64" height="66"/>
@@ -515,6 +515,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buildingSelectsdButton:" destination="uPz-Vs-oDP" eventType="touchUpInside" id="vye-1C-09G"/>
+                                    <segue destination="2kv-vf-KbN" kind="modal" identifier="ShowBuildingSegueIdentifier" id="1tj-fx-wfN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rBu-0i-nbk">
@@ -574,6 +575,132 @@
             </objects>
             <point key="canvasLocation" x="349" y="611"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="ZMq-cU-0zc">
+            <objects>
+                <viewController id="2kv-vf-KbN" customClass="BKBuildingWithRoomsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zxs-5L-HoF">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Bk-Ra-WBK">
+                                <rect key="frame" x="497" y="0.0" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.57016687229999996" green="0.58807908440000001" blue="0.7912554825" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Карта">
+                                    <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="menuButtonPress:" destination="2kv-vf-KbN" eventType="touchUpInside" id="LvN-kJ-3K3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vyd-qd-adt">
+                                <rect key="frame" x="426" y="0.0" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.57016687229999996" green="0.58807908440000001" blue="0.7912554825" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Планета">
+                                    <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="menuButtonPress:" destination="2kv-vf-KbN" eventType="touchUpInside" id="2s0-Il-Nq3"/>
+                                    <segue destination="uPz-Vs-oDP" kind="modal" identifier="showPlanetSegueIdentifier" id="KP6-Yc-74i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6cf-zj-3BU">
+                                <rect key="frame" x="360" y="0.0" width="66" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.57016687229999996" green="0.58807908440000001" blue="0.7912554825" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Корабль">
+                                    <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="menuButtonPress:" destination="2kv-vf-KbN" eventType="touchUpInside" id="WoO-T0-6La"/>
+                                    <segue destination="eZ1-cl-f24" kind="modal" identifier="showShipSegueIdentifier" id="l2V-Y4-5aK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7PI-mI-pxr">
+                                <rect key="frame" x="280" y="0.0" width="79" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.57016687229999996" green="0.58807908440000001" blue="0.7912554825" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Крафтиннг">
+                                    <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="menuButtonPress:" destination="2kv-vf-KbN" eventType="touchUpInside" id="fy9-AX-v1S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TXC-ll-MKX">
+                                <rect key="frame" x="0.0" y="0.0" width="272" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.57016687229999996" green="0.58807908440000001" blue="0.7912554825" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Список комнат">
+                                    <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="listOfRoomButton:" destination="2kv-vf-KbN" eventType="touchUpInside" id="ccU-Pp-vGT"/>
+                                    <action selector="menuButtonPress:" destination="2kv-vf-KbN" eventType="touchUpInside" id="BSd-Vv-xdd"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Pwe-4y-w1A">
+                                <rect key="frame" x="343" y="32" width="225" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hM4-S2-NVI">
+                                <rect key="frame" x="0.0" y="61" width="343" height="258"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="some descriprtpion of building, room or person" id="OQ9-zB-AJN">
+                                <rect key="frame" x="343" y="166" width="225" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите комнату" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="17h-3S-dFl">
+                                <rect key="frame" x="96" y="32" width="151" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="some dialog window with person" id="LPf-x3-iLS">
+                                <rect key="frame" x="0.0" y="61" width="343" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Z6e-gO-wkZ">
+                                <rect key="frame" x="0.0" y="166" width="343" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.57016687229999996" green="0.58807908440000001" blue="0.7912554825" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="LFT-Xh-ycx"/>
+                    <navigationItem key="navigationItem" id="JsC-6Z-BUk"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="chooseAnswerTableView" destination="Z6e-gO-wkZ" id="IMr-uF-Nh9"/>
+                        <outlet property="choosingLabel" destination="17h-3S-dFl" id="eNI-YS-IBq"/>
+                        <outlet property="descriptionTextView" destination="OQ9-zB-AJN" id="eMQ-lc-CI5"/>
+                        <outlet property="dialogTextView" destination="LPf-x3-iLS" id="lUz-Hs-jMb"/>
+                        <outlet property="imageOfRoomActivity" destination="Pwe-4y-w1A" id="EO8-P3-15h"/>
+                        <outlet property="listOfRoomTableView" destination="hM4-S2-NVI" id="TQD-4z-1ag"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fIj-Nl-ghD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="349" y="1027"/>
+        </scene>
     </scenes>
     <resources>
         <image name="SpaceShip.png" width="400" height="290"/>
@@ -584,6 +711,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="KP6-Yc-74i"/>
         <segue reference="OXa-ES-v2Z"/>
     </inferredMetricsTieBreakers>
 </document>

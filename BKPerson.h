@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
-
+@class BKRoom;
 
 @interface BKPerson : NSManagedObject
 
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * descriptionOfPerson;
 @property (nonatomic, retain) NSSet *quest;
-@property (nonatomic, retain) NSManagedObject *room;
+@property (nonatomic, retain) BKRoom *room;
 @end
 
 @interface BKPerson (CoreDataGeneratedAccessors)

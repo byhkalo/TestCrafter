@@ -7,6 +7,7 @@
 //
 
 #import "PlanetWithRoomsViewController.h"
+#import "BKBuildingWithRoomsViewController.h"
 #import "BKBuilding.h"
 
 
@@ -138,15 +139,24 @@ typedef enum {
 }
 
 - (IBAction)buildingSelectsdButton:(UIButton *)sender {
+    
+    [self performSegueWithIdentifier:@"ShowBuildingSegueIdentifier" sender:sender];
+    
 }
 
 
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton*)sender {
+    static NSString* roomSegueIdentifier = @"ShowBuildingSegueIdentifier";
+    if ([segue.identifier isEqualToString:roomSegueIdentifier]) {
+        
+        BKBuildingWithRoomsViewController* bwr = segue.destinationViewController;
+        bwr.building = [self.planet.buildings.allObjects objectAtIndex:sender.tag];
+        
+    }
+    
 }
 
 

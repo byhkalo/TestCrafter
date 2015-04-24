@@ -20,6 +20,7 @@
 		04016DA01AB21C4D002307FF /* BKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04016D9F1AB21C4D002307FF /* BKTabBarController.m */; };
 		04016DA31AB22324002307FF /* BKShipTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04016DA21AB22324002307FF /* BKShipTableViewController.m */; };
 		041B460A1AB9CE800015B6D2 /* BKBuildingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 041B46091AB9CE800015B6D2 /* BKBuildingButton.m */; };
+		04592B341AE9C112001438A2 /* BKBuildingWithRoomsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04592B331AE9C112001438A2 /* BKBuildingWithRoomsViewController.m */; };
 		046890C61AB72BCC00AA240C /* BKResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 046890C51AB72BCC00AA240C /* BKResource.m */; };
 		046890C91AB72BCD00AA240C /* BKPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 046890C81AB72BCD00AA240C /* BKPerson.m */; };
 		046890D21AB72BCD00AA240C /* BKPlanetarySystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 046890D11AB72BCD00AA240C /* BKPlanetarySystem.m */; };
@@ -74,6 +75,8 @@
 		04016DA21AB22324002307FF /* BKShipTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKShipTableViewController.m; sourceTree = "<group>"; };
 		041B46081AB9CE800015B6D2 /* BKBuildingButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBuildingButton.h; sourceTree = "<group>"; };
 		041B46091AB9CE800015B6D2 /* BKBuildingButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBuildingButton.m; sourceTree = "<group>"; };
+		04592B321AE9C112001438A2 /* BKBuildingWithRoomsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBuildingWithRoomsViewController.h; sourceTree = "<group>"; };
+		04592B331AE9C112001438A2 /* BKBuildingWithRoomsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBuildingWithRoomsViewController.m; sourceTree = "<group>"; };
 		046890C41AB72BCC00AA240C /* BKResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKResource.h; path = ../BKResource.h; sourceTree = "<group>"; };
 		046890C51AB72BCC00AA240C /* BKResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKResource.m; path = ../BKResource.m; sourceTree = "<group>"; };
 		046890C71AB72BCD00AA240C /* BKPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKPerson.h; path = ../BKPerson.h; sourceTree = "<group>"; };
@@ -250,6 +253,8 @@
 				04C15BCF1AB8AE5B00E9D709 /* ShipViewController.m */,
 				04C15BC81AB8A56300E9D709 /* PlanetWithRoomsViewController.h */,
 				04C15BC91AB8A56300E9D709 /* PlanetWithRoomsViewController.m */,
+				04592B321AE9C112001438A2 /* BKBuildingWithRoomsViewController.h */,
+				04592B331AE9C112001438A2 /* BKBuildingWithRoomsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -378,6 +383,7 @@
 				046890D51AB72BCD00AA240C /* BKBuilding.m in Sources */,
 				04016DA31AB22324002307FF /* BKShipTableViewController.m in Sources */,
 				04016D941AB191B6002307FF /* BKDataManeger.m in Sources */,
+				04592B341AE9C112001438A2 /* BKBuildingWithRoomsViewController.m in Sources */,
 				04016D621AB18767002307FF /* AppDelegate.m in Sources */,
 				041B460A1AB9CE800015B6D2 /* BKBuildingButton.m in Sources */,
 				046890DB1AB72BCE00AA240C /* BKQuest.m in Sources */,
@@ -515,8 +521,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpaceCrafter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -525,8 +533,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpaceCrafter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

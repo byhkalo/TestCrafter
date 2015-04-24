@@ -64,8 +64,6 @@ static NSString* planetNames[] = {
     
 }
 
-
-
 @synthesize fetchedResultsControllerAboutPlanet = _fetchedResultsControllerAboutPlanet;
 @synthesize fetchedResultsControllerAboutShip = _fetchedResultsControllerAboutShip;
 
