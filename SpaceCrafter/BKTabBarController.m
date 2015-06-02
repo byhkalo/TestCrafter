@@ -141,6 +141,7 @@
     //[craftPlanet setResources:[NSSet setWithObjects:resource1,resource2, nil]];
     
     [[BKDataManeger sharedManager] saveContext];
+    //some test comment
     
 }
 

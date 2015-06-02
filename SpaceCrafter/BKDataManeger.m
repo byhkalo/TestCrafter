@@ -24,7 +24,6 @@
     dispatch_once(&onceToken, ^{
         manager = [[BKDataManeger alloc]init];
     });
-    
     return manager;
     
 
