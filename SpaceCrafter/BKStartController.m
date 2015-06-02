@@ -14,6 +14,8 @@
 #import "BKCraftPlanet.h"
 #import "BKResource.h"
 #import "BKBuilding.h"
+#import "BKRoom.h"
+
 @interface BKStartController ()
 
 @property (copy, nonatomic) NSString* entity;
@@ -183,6 +185,12 @@ static NSString* planetNames[] = {
         
         BKBuilding* townHall = [NSEntityDescription insertNewObjectForEntityForName:@"BKBuilding" inManagedObjectContext:self.managedObjectContext];
         townHall.name = @"TownHall";
+        BKRoom* roomForTownHall = [NSEntityDescription insertNewObjectForEntityForName:@"BKRoom" inManagedObjectContext:self.managedObjectContext];
+        roomForTownHall.name = @"Кабинет Мэра";
+        roomForTownHall.descriptionOfRoom = @"Кабинет в котором сидит мэр и контролирует все законные и незаконные действия на планете";
+        [townHall addRoomsObject:roomForTownHall];
+        
+        
         BKBuilding* medicineCenter = [NSEntityDescription insertNewObjectForEntityForName:@"BKBuilding" inManagedObjectContext:self.managedObjectContext];
         medicineCenter.name = @"MedicineCenter";
         BKBuilding* hangar = [NSEntityDescription insertNewObjectForEntityForName:@"BKBuilding" inManagedObjectContext:self.managedObjectContext];

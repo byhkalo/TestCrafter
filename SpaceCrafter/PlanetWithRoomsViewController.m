@@ -9,6 +9,7 @@
 #import "PlanetWithRoomsViewController.h"
 #import "BKBuildingWithRoomsViewController.h"
 #import "BKBuilding.h"
+#import "BKRoom.h"
 
 
 static NSString* planetNames[] = {
@@ -73,17 +74,32 @@ typedef enum {
 }
 #pragma mark - Private Methods
 
+-(BKBuilding*) buildingInPlanetBuildingsOnTag:(NSInteger) tag {
+    
+    for (BKBuilding* helpBuilding in self.planet.buildings) {
+        if ([planetNames[tag] isEqualToString:helpBuilding.name]) {
+            return helpBuilding;
+        }
+    }
+    
+    return nil;
+}
+
 -(void) setButtonsOfBuildings {
     
     for (UIButton* someButton in self.roomsButtonsCollection) {
+        
         BOOL setBuilding = NO;
+        
         for (BKBuilding* building in [self.planet.buildings allObjects]) {
-          if ([planetNames[someButton.tag] isEqualToString:building.name]) {
-              UIImageView* imageView = [[UIImageView alloc]initWithFrame:someButton.bounds];
-              imageView.image = [UIImage imageNamed:[self returnNameOfPictureForButtonInTag:someButton.tag]];
-              [someButton addSubview:imageView];
-              someButton.backgroundColor = [UIColor clearColor];
-              setBuilding = YES;
+        
+            if ([planetNames[someButton.tag] isEqualToString:building.name]) {
+            
+                UIImageView* imageView = [[UIImageView alloc]initWithFrame:someButton.bounds];
+                imageView.image = [UIImage imageNamed:[self returnNameOfPictureForButtonInTag:someButton.tag]];
+                [someButton addSubview:imageView];
+                someButton.backgroundColor = [UIColor clearColor];
+                setBuilding = YES;
           }
         }
         if (setBuilding == NO) {
@@ -152,8 +168,23 @@ typedef enum {
     static NSString* roomSegueIdentifier = @"ShowBuildingSegueIdentifier";
     if ([segue.identifier isEqualToString:roomSegueIdentifier]) {
         
+        BKBuilding* buildingOne = [self.planet.buildings.allObjects objectAtIndex:sender.tag];
+        BKBuilding* buildingTwo = [self buildingInPlanetBuildingsOnTag:sender.tag];
+        
+        if ([buildingOne.name isEqualToString:buildingTwo.name]) {
+            NSLog(@"buildings equal!!!!-=-=-=-=-=-");
+        }else{
+            NSLog(@"buildings NOT equal!!!!0-0-0-0-0-0-0");
+        }
+        
+        NSSet* setOfRooms = buildingTwo.rooms;
+        BKRoom* room = [setOfRooms.allObjects lastObject];
+        
+        NSLog(@"%@", room);
+        
         BKBuildingWithRoomsViewController* bwr = segue.destinationViewController;
-        bwr.building = [self.planet.buildings.allObjects objectAtIndex:sender.tag];
+        bwr.building = buildingTwo;
+        
         
     }
     

@@ -106,10 +106,11 @@ typedef enum {
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    
-    
-    return 1;
-    
+    if (tableView.tag == BKTableViewTagListOfRoom) {
+        return [self.building.rooms.allObjects count];
+    }else {
+        return [self.selectRoom.people.allObjects count];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -128,7 +129,7 @@ typedef enum {
         
         cell.textLabel.text = room.name;
     }else if (tableView.tag == BKTableViewTagChooseAnswer) {
-        if (!self.selectPerson) {
+        if (self.selectPerson) {
             BKPerson* person = [self.selectRoom.people.allObjects objectAtIndex:indexPath.row];
             cell.textLabel.text = person.name;
         }else{
